@@ -1,14 +1,19 @@
-# Self-supervised Semantic Segmentation: Consistency over Transformation <br> <span style="float: rigth"><sub><sup>$\text{(\textcolor{teal}{ICCV 2023})}$</sub></sup></span>
-[Paper is available]()
+# Self-supervised Semantic Segmentation: Consistency over Transformation <br> <span style="float: rigth"><sub><sup>$\text{\textcolor{teal}{ICCV CVAMD 2023}}$</sub></sup></span>
 
-In our recent work we propose a novel self-supervised algorithm called S$^3$-Net for accurate medical image segmentation. The proposed S$^3$-Net incorporates the Inception Large Kernel Attention (I-LKA) modules to enhance the network's ability to capture both contextual information and local intricacies, leading to precise semantic segmentation. The paper addresses the challenge of handling deformations commonly observed in medical images by integrating deformable convolutions into the architecture. This allows the network to effectively capture and delineate lesion deformations, leading to better-defined object boundaries. One key aspect of the proposed method is its emphasis on learning invariance to affine transformations, which are frequently encountered in medical scenarios. By focusing on robustness against geometric distortions, the model becomes more capable of accurately representing and managing such distortions. Moreover, to ensure spatial consistency and encourage the grouping of neighboring image pixels with similar features, the paper introduces a spatial consistency loss term. If this code helps with your research please consider citing our paper.
+[![arXiv](https://img.shields.io/badge/arXiv-2308.13442-b31b1b.svg)](https://arxiv.org/abs/2308.13442)
 
 
-![S3Net](https://github.com/mindflow-institue/MS-Former/assets/61879630/fe8910b5-b9ed-4cf7-be80-50b8398e13b5)
+In our recent work, we propose a novel self-supervised algorithm called S<sup>3</sup>-Net for accurate medical image segmentation. The proposed S<sup>3</sup>-Net incorporates the Inception Large Kernel Attention (I-LKA) modules to enhance the network's ability to capture both contextual information and local intricacies, leading to precise semantic segmentation. The paper addresses the challenge of handling deformations commonly observed in medical images by integrating deformable convolutions into the architecture. This allows the network to effectively capture and delineate lesion deformations, leading to better-defined object boundaries. One key aspect of the proposed method is its emphasis on learning invariance to affine transformations, which are frequently encountered in medical scenarios. By focusing on robustness against geometric distortions, the model becomes more capable of accurately representing and managing such distortions. Moreover, to ensure spatial consistency and encourage the grouping of neighboring image pixels with similar features, the paper introduces a spatial consistency loss term. If this code helps with your research please consider citing our paper.
+
+<br>
+<p align="center">
+  <img src="https://github.com/mindflow-institue/S3Net/assets/61879630/e19a0cb2-aa7c-487b-a4bd-419c689daa99" width="800">
+</p>
 
 
 ## Updates
-- July 25, 2023: Paper accepted in ICCV 2023 workshop 
+- July 25, 2023: Paper accepted in ICCV CVAMD 2023  
+- If you found this paper useful, please consider checking out our previously accepted paper at MIDL 2023 [[Paper](https://openreview.net/forum?id=pp2raGSU3Wx)] [[GitHub](https://github.com/mindflow-institue/MS-Former)]
 
 ## Installation
 
@@ -17,7 +22,11 @@ pip install -r requirements.txt
 ```
 
 ## Run Demo
-Put your input images in the ```input/image``` folder and just simply run the ```MSFormer.ipynb``` notebook ;)
+Put your input images in the ```input_images/image``` folder and just simply run the ```S3Net.ipynb``` notebook ;)
+
+## Experiments
+![output](https://github.com/mindflow-institue/S3Net/assets/61879630/dbdc9e16-2f8d-4d37-bbb7-c079f5a91e32)
+
 
 ## Citation
 If this code helps with your research, please consider citing the following paper:
@@ -25,11 +34,10 @@ If this code helps with your research, please consider citing the following pape
 
 ```python
 @inproceedings{
-  karimijafarbigloo2023msformer,
-  title={{MS}-Former: Multi-Scale Self-Guided Transformer for Medical Image Segmentation},
+  karimijafarbigloo2023self,
+  title={Self-supervised Semantic Segmentation: Consistency over Transformation},
   author={Sanaz Karimijafarbigloo and Reza Azad and Amirhossein Kazerouni and Dorit Merhof},
-  booktitle={Medical Imaging with Deep Learning},
+  booktitle={ICCV 2023 Workshop on Computer Vision for Automated Medical Diagnosis},
   year={2023},
-  url={https://openreview.net/forum?id=pp2raGSU3Wx}
 }
 ```
