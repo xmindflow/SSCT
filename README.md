@@ -1,4 +1,4 @@
-# Self-supervised Semantic Segmentation: Consistency over Transformation <br> <span style="float: rigth"><sub><sup>ICCV CVAMD 2023</sub></sup></span>
+# Self-supervised Semantic Segmentation: Consistency over Transformation <br> <span style="float: rigth"><sub><sup>ICCV 2023 CVAMD Workshop</sub></sup></span>
 
 [![arXiv](https://img.shields.io/badge/arXiv-2308.13442-b31b1b.svg)](https://arxiv.org/abs/2309.00143) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mindflow-institue/SSCT/blob/main/S3Net_colab.ipynb)
 
